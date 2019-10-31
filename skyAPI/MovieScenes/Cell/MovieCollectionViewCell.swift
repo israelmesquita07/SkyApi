@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class MovieCollectionViewCell: UICollectionViewCell {
 
@@ -19,8 +20,15 @@ class MovieCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
     }
     
-    func setupCell(screenWidth: CGFloat) {
+    func setupCell(_ movie:Movie, screenWidth: CGFloat) {
+        
         viewWidthConstraint.constant = (screenWidth / 2 ) - 8
+        movieLabel.text = movie.title
+        guard let coverUrl = movie.coverUrl, let url = URL(string: coverUrl) else {
+            return
+        }
+        movieImageView.kf.indicatorType = .activity
+        movieImageView.kf.setImage(with: url)
     }
 
 }

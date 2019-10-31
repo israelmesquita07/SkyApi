@@ -15,14 +15,16 @@ struct Movie: Decodable {
     let duration: String?
     let releaseYear: String?
     let coverUrl: String?
+    let backdropsUrl: [String]?
     
-    enum CondingKeys: String, CodingKey {
+    enum CodingKeys: String, CodingKey {
         case id
         case title
         case overview
         case duration
         case releaseYear = "release_year"
         case coverUrl = "cover_url"
+        case backdropsUrl = "backdrops_url"
     }
 }
 

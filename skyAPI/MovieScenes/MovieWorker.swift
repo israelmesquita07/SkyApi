@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class MovieWorker {
+    
+    func getMovies(onComplete:@escaping(Result<[Movie],Error>) -> Void) {
+        
+        API.getMovies { (result) in
+            onComplete(result)
+        }
+    }
+}
