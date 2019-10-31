@@ -19,10 +19,11 @@ class DetailsMovieCollectionViewCell: UICollectionViewCell {
     
     func setupCell(imagesUrl:String) {
         
+        if let url = URL(string: imagesUrl) {
+            movieImageView.kf.indicatorType = .activity
+            movieImageView.kf.setImage(with: url)
+            return
+        }
         movieImageView.image = UIImage(named: "sky")
-//        if let url = URL(string: imagesUrl) {
-//            movieImageView.kf.indicatorType = .activity
-//            movieImageView.kf.setImage(with: url)
-//        }
     }
 }

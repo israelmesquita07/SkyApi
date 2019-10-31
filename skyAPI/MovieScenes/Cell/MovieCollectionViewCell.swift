@@ -25,6 +25,7 @@ class MovieCollectionViewCell: UICollectionViewCell {
         viewWidthConstraint.constant = (screenWidth / 2 ) - 8
         movieLabel.text = movie.title
         guard let coverUrl = movie.coverUrl, let url = URL(string: coverUrl) else {
+            movieImageView.image = UIImage(named: "sky")
             return
         }
         movieImageView.kf.indicatorType = .activity

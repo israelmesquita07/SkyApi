@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		33D991A492DBB20A4453B081 /* Pods_skyAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B28FA84951C7FFD94A71F0 /* Pods_skyAPITests.framework */; };
 		582B2B55236A99A800B7F161 /* DetailsMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B2B54236A99A800B7F161 /* DetailsMovieViewController.swift */; };
-		582B2B57236A99D600B7F161 /* DetailsMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B2B56236A99D600B7F161 /* DetailsMoviePresenter.swift */; };
-		582B2B59236A99E500B7F161 /* DetailsMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B2B58236A99E500B7F161 /* DetailsMovieInteractor.swift */; };
 		582B2B5C236A9BF400B7F161 /* MovieRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B2B5B236A9BF400B7F161 /* MovieRouter.swift */; };
 		582B2B5F236B2EE200B7F161 /* DetailsMovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582B2B5D236B2EE200B7F161 /* DetailsMovieCollectionViewCell.swift */; };
 		582B2B60236B2EE200B7F161 /* DetailsMovieCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 582B2B5E236B2EE200B7F161 /* DetailsMovieCollectionViewCell.xib */; };
@@ -50,8 +48,6 @@
 		2E9B52C89781886AC4561971 /* Pods_skyAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_skyAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32A19C9A31DED2798C52870C /* Pods-skyAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-skyAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-skyAPI/Pods-skyAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		582B2B54236A99A800B7F161 /* DetailsMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieViewController.swift; sourceTree = "<group>"; };
-		582B2B56236A99D600B7F161 /* DetailsMoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMoviePresenter.swift; sourceTree = "<group>"; };
-		582B2B58236A99E500B7F161 /* DetailsMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieInteractor.swift; sourceTree = "<group>"; };
 		582B2B5B236A9BF400B7F161 /* MovieRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRouter.swift; sourceTree = "<group>"; };
 		582B2B5D236B2EE200B7F161 /* DetailsMovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsMovieCollectionViewCell.swift; sourceTree = "<group>"; };
 		582B2B5E236B2EE200B7F161 /* DetailsMovieCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailsMovieCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -113,8 +109,6 @@
 			children = (
 				582B2B61236B2EF000B7F161 /* Cell */,
 				582B2B54236A99A800B7F161 /* DetailsMovieViewController.swift */,
-				582B2B56236A99D600B7F161 /* DetailsMoviePresenter.swift */,
-				582B2B58236A99E500B7F161 /* DetailsMovieInteractor.swift */,
 			);
 			path = DetailsMovieScenes;
 			sourceTree = "<group>";
@@ -415,11 +409,9 @@
 				58BF649E236956D400064BA8 /* MoviePresenter.swift in Sources */,
 				58BF646F2368BDA400064BA8 /* AppDelegate.swift in Sources */,
 				58BF64712368BDA400064BA8 /* SceneDelegate.swift in Sources */,
-				582B2B59236A99E500B7F161 /* DetailsMovieInteractor.swift in Sources */,
 				58BF64922368BF5300064BA8 /* MovieCollectionViewCell.swift in Sources */,
 				582B2B5F236B2EE200B7F161 /* DetailsMovieCollectionViewCell.swift in Sources */,
 				582B2B5C236A9BF400B7F161 /* MovieRouter.swift in Sources */,
-				582B2B57236A99D600B7F161 /* DetailsMoviePresenter.swift in Sources */,
 				58BF64A22369570000064BA8 /* MovieWorker.swift in Sources */,
 				586DFD92236A80A500A5E220 /* API.swift in Sources */,
 				58BF64972368C67900064BA8 /* Movie.swift in Sources */,
